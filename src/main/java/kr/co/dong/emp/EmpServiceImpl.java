@@ -30,18 +30,4 @@ public class EmpServiceImpl implements EmpService {
 		return dao.search(ename);
 	}
 
-
-	@Override
-	public List<EmpDTO> listAll() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public void insertEmp(EmpDTO eDTO) throws Exception {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

@@ -34,7 +34,7 @@ public class EmpDAOImpl implements EmpDAO {
 	public EmpDTO search(String ename) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("DAO : " + ename);
-		return sqlSession.selectOne(nameSpace + ".search");
+		return sqlSession.selectOne(nameSpace + ".search",ename);
 	}
 
 	@Override

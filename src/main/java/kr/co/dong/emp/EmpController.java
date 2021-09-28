@@ -32,13 +32,15 @@ public class EmpController {
 	
 	@RequestMapping(value="search", method = RequestMethod.POST)
 	public String search(Model model, HttpServletRequest request) throws Exception {
+		request.setCharacterEncoding("UTF-8");
+		
 		String ename = request.getParameter("ename");
 		logger.info("여기는 이름검색 입니다. : " + ename);
 
 		// 원하는 서비스 메소드 호출
 		EmpDTO eDTO = service.search(ename);
-		System.out.println("사원번호" + eDTO.getEmpno());
-		System.out.println("사원번호" + eDTO.getEname());
+		System.out.println("사원번호" + eDTO);
+		
 		// view에 저장할 데이터 
 		model.addAttribute("eDTO",eDTO);
 		return "test01";
