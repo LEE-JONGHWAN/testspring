@@ -19,6 +19,7 @@ public class EmpDTO {
 	private String ename;
 	private String job;
 	
+	
 	public EmpDTO() {  // 디폴트생성자 작성
 	}
 	

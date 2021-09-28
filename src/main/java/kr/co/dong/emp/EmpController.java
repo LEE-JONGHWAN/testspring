@@ -1,6 +1,7 @@
 package kr.co.dong.emp;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,28 @@ public class EmpController {
 		model.addAttribute("count", count);
 		return "test01";
 	}
+	
+	@RequestMapping(value="search", method = RequestMethod.POST)
+	public String search(Model model, HttpServletRequest request) throws Exception {
+		String ename = request.getParameter("ename");
+		logger.info("여기는 이름검색 입니다. : " + ename);
+
+		// 원하는 서비스 메소드 호출
+		EmpDTO eDTO = service.search(ename);
+		System.out.println("사원번호" + eDTO.getEmpno());
+		System.out.println("사원번호" + eDTO.getEname());
+		// view에 저장할 데이터 
+		model.addAttribute("eDTO",eDTO);
+		return "test01";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 

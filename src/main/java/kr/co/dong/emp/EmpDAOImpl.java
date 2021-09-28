@@ -10,6 +10,8 @@
  */
 package kr.co.dong.emp;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -26,6 +28,25 @@ public class EmpDAOImpl implements EmpDAO {
 	@Override
 	public int empCount() throws Exception {
 		return sqlSession.selectOne(nameSpace + ".empcount");
+	}
+
+	@Override
+	public EmpDTO search(String ename) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("DAO : " + ename);
+		return sqlSession.selectOne(nameSpace + ".search");
+	}
+
+	@Override
+	public List<EmpDTO> listAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insertEmp(EmpDTO eDTO) throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
