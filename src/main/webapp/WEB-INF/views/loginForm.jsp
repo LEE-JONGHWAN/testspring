@@ -20,5 +20,17 @@
 		admin,	12345
 
 	</form>
+	<hr>
+	 사원의 부분 정보를 입력.<br>
+	 <form>
+	 	사원번호 : <input type="text" name="empno"><br>
+	 	사원명 : <input type="text" name="ename"><br>
+		급여 : <input type="text" name="sal"><br>
+		<input type="submit"> 
+	 </form>
+	
+	<div>
+		<a href="/dong">메인으로 이동</a>
+	</div>
 </body>
 </html>

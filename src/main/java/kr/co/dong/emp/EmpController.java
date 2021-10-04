@@ -13,16 +13,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class EmpController {
-
 	private static final Logger logger = LoggerFactory.getLogger(EmpController.class);
 	
 	@Inject
 	private EmpService service;
 	
-	
 	@RequestMapping(value="empcount", method = RequestMethod.GET)
-	public String empCount(Model model) throws Exception {
+	public String empCount(Model model
+			,HttpServletRequest request) throws Exception {
 		logger.info("사원수 출력 페이지로 이동!");
+		// 인코딩 - 디비저장시 한글이 깨졌을 경우
+		request.setCharacterEncoding("UTF-8");
+		
 		// 원하는 서비스 메소드 호출
 		int count = service.empCount();
 		// view에 저장할 데이터 
@@ -32,6 +34,7 @@ public class EmpController {
 	
 	@RequestMapping(value="search", method = RequestMethod.POST)
 	public String search(Model model, HttpServletRequest request) throws Exception {
+		// 인코딩 - 디비저장시 한글이 깨졌을 경우
 		request.setCharacterEncoding("UTF-8");
 		
 		String ename = request.getParameter("ename");
@@ -45,13 +48,6 @@ public class EmpController {
 		model.addAttribute("eDTO",eDTO);
 		return "test01";
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }
 

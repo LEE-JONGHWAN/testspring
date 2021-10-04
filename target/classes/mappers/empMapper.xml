@@ -6,12 +6,11 @@
 	<select id="empcount" resultType="java.lang.Integer">
 		select count(*) as 전체사원수 from emp
 	</select>
-	<select id="search" parameterType="java.lang.String"  resultType="kr.co.dong.emp.EmpDTO">
-		select * from emp where ename = #{ename}
-	</select>
 	
-	<select id="listall">
-		select * from emp
+	<select id="search" parameterType="String" resultType="kr.co.dong.emp.EmpDTO">
+		select * 
+		from emp
+		where ename = #{ename}
 	</select>
 	
 </mapper>

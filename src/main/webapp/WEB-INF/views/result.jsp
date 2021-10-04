@@ -8,6 +8,10 @@
 <title>로그인성공</title>
 </head>
 <body>
- 성공.
+ 성공.<br>
+
+ 	<div>
+		<a href="/dong">메인으로 이동</a>
+	</div>
 </body>
 </html>

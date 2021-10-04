@@ -8,6 +8,9 @@
 <title>화면 중앙</title>
 </head>
 <body>
+<a href="login/loginForm">로그인하러 가기</a>
+<button onclick="history.back();">뒤로이동</button>
+
 여기는 화면의 중앙입니다.<br>
 전송된 문자열 : ${str}<hr>
 <div>
@@ -21,7 +24,9 @@
 	<hr>
 	사원번호 : ${eDTO.empno}<br>
 	이름 : ${eDTO.ename}<br>
-	
+	<div>
+		<a href="/dong">메인으로 이동</a>
+	</div>
 	
 </div>
 

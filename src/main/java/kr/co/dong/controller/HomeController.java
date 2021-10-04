@@ -1,4 +1,4 @@
-package kr.co.dong;
+package kr.co.dong.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
