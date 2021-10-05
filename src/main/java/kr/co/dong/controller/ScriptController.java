@@ -17,7 +17,7 @@ public class ScriptController {
 		ModelAndView mav = new ModelAndView();
 		
 		mav.addObject("js01", "this is js-test01 and ModelAndView useing.");
-		mav.setViewName("jscript01");
+		mav.setViewName("jscript/jscript01");
 		return mav;
 	}
 //	public String jscript01(Model model) {
@@ -33,7 +33,7 @@ public class ScriptController {
 		ModelAndView mav = new ModelAndView();
 		
 		mav.addObject("js02","this is js-test02 and ModelAndView useing.");
-		mav.setViewName("jscript02");
+		mav.setViewName("jscript/jscript02");
 		return mav;
 	}
 //	public String jscript02(Model model) {
@@ -49,7 +49,7 @@ public class ScriptController {
 		ModelAndView mav = new ModelAndView();
 		
 		mav.addObject("js03", "this is js-test03 and ModelAndView useing.");
-		mav.setViewName("jscript03");
+		mav.setViewName("jscript/jscript03");
 		return mav;
 	}
 	
@@ -59,7 +59,7 @@ public class ScriptController {
 		ModelAndView mav = new ModelAndView();
 		
 		mav.addObject("js04", "this is js-test04 and ModelAndView useing.");
-		mav.setViewName("jscript04");
+		mav.setViewName("jscript/jscript04");
 		return mav;
 	}
 	
