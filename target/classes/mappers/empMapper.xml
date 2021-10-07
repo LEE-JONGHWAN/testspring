@@ -3,10 +3,6 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.co.dong.empMapper">
-	<select id="empcount" resultType="java.lang.Integer">
-		select count(*) as 전체사원수 from emp
-	</select>
-	
 	<select id="search" parameterType="String" resultType="kr.co.dong.emp.EmpDTO">
 		select * 
 		from emp

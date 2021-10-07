@@ -102,7 +102,8 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="loginT">Login-t</a>
-                        <a class="collapse-item" href="#">BoardTest</a>
+                        <a class="collapse-item" href="board/login">[ 로그인 ]</a>
+                        <a class="collapse-item" href="#">[ Board ]</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>

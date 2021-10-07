@@ -54,10 +54,18 @@
                     
                     <!--  Content Row : 본문의 내용을 작성하는 곳입니다. -->
 					<div class="row">      
-                    		본문의 내용을 작성하는 곳입니다.<br>
-                    		msg : ${msg}		<br>
-                    
-                    		session 확인 : ${user.id} , ${user.name}
+						<div>
+                    		로그인의 내용을 작성하는 곳입니다.<hr>
+                    		<form method="post">
+								아이디 : <input type="text" name="id" /><br />
+								비밀번호 : <input type="password" name="password" /><br />
+								<input type="submit" value="로그인">
+								<input type="reset" value="재작성">								                    			
+                    		</form><hr>
+                    		root/root<br>
+                    		system/system<br>
+                    		user01/user01<br>
+                    	</div>
 					</div>
 					                      
                 </div>
